@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Parqueadero</title>
+    <link rel="stylesheet" href="Reservas.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="LOGIN.html">Ingresar</a></li>
+                <li><a href="acerca.html">Nosotros</a></li>
+                <li><a href="membresias.html">Membresias</a></li>
+                <li><a href="Reservas.html">Reserva de Parqueadero</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="reservation-form">
+        <h2>Complete el formulario de reserva</h2>
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="parqueadero">Seleccione un parqueadero:</label>
+                <select id="parqueadero" name="parqueadero">
+                    <option value="p1">P1</option>
+                    <option value="p2">P2</option>
+                    <option value="p3">P3</option>
+                    <option value="p4">P4</option>
+                    <option value="p5">P5</option>
+                    <option value="p6">P6</option>
+                    <option value="p7">P7</option>
+                    <option value="p8">P8</option>
+                    <option value="p9">P9</option>
+                    <option value="p10">P10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora de reserva:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+    <footer>
+        <p>PARKING.S.E &copy; 2024.</p>
+    </footer>
+    <script src="reservas.js"></script>
+</body>
+</html>
